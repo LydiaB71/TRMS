@@ -30,14 +30,12 @@ Getting Started
     create table role_type(
     id integer primary key,
     role_name varchar(20)
-);
-
-create table department(
+    );
+    create table department(
     id integer primary key,
     dept_name varchar (20)
-);
-
-create table employee (
+    );
+    create table employee (
 	id serial primary key,
 	emp_password varchar(15) not null,
 	first_name varchar(10) not null,
@@ -47,16 +45,13 @@ create table employee (
 	emp_role integer references role_type,
 	emp_role2 integer,
 	funds float
-	
 	);
-
-create table event_type(
+	create table event_type(
     id integer primary key,
     event_name varchar(15),
     reimb_percnt float
-);
-
-create table course (
+    );
+    create table course (
     id serial primary key,
     employee_id integer references employee,
     start_date varchar(10),
@@ -70,26 +65,23 @@ create table course (
 	ben_cor varchar(15),
 	award_granted varchar (15),
 	approver_id integer
-);
-   
- Next you need to insert some values into the tables as follows:
- insert into role_type values (1, 'student');
-insert into role_type values (2, 'direct supervisor');
-insert into role_type values (3, 'department head');
-insert into role_type values (4, 'benefits coordinator');
-
-insert into event_type values (1, 'certification',1);
-insert into event_type values (2, 'tech training',.9);
-insert into event_type values (3, 'univ courses',.8);
-insert into event_type values (4, 'cert prep class',.75);
-insert into event_type values (5, 'seminar',.6);
-insert into event_type values (6, 'other',.3);
-
-insert into employee values (1, 'pass', 'Crystal', 'Smith', 'Houston', 1, 1,0,1000);
-insert into employee values (2, 'pass', 'Linda', 'Brown', 'Houston', 2, 2 ,0, 1000);
-insert into employee values (3, 'pass', 'Barbara', 'Smith', 'Houston', 3, 3,0,1000);
-insert into employee values (4, 'pass', 'Paul', 'Smith', 'Houston', 4, 4,0, 1000);
-insert into employee values (5, 'pass', 'Lois', 'Glynn', 'Lake Tahoe', 2, 3, 4,1000);
+	);
+	Next you need to insert some values into the tables as follows:
+	insert into role_type values (1, 'student');
+	insert into role_type values (2, 'direct supervisor');
+	insert into role_type values (3, 'department head');
+	insert into role_type values (4, 'benefits coordinator');
+	insert into event_type values (1, 'certification',1);
+	insert into event_type values (2, 'tech training',.9);
+	insert into event_type values (3, 'univ courses',.8);
+	insert into event_type values (4, 'cert prep class',.75);
+	insert into event_type values (5, 'seminar',.6);
+	insert into event_type values (6, 'other',.3);
+	insert into employee values (1, 'pass', 'Crystal', 'Smith', 'Houston', 1, 1,0,1000);
+	insert into employee values (2, 'pass', 'Linda', 'Brown', 'Houston', 2, 2 ,0, 1000);
+	insert into employee values (3, 'pass', 'Barbara', 'Smith', 'Houston', 3, 3,0,1000);
+	insert into employee values (4, 'pass', 'Paul', 'Smith', 'Houston', 4, 4,0, 1000);
+	insert into employee values (5, 'pass', 'Lois', 'Glynn', 'Lake Tahoe', 2, 3, 4,1000);
 
 Usage
 
