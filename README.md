@@ -85,4 +85,9 @@ Getting Started
 
 Usage
 
-    Once the database is set up, you will need to load the Java back-end into your IDE such as Eclipse.  Then you'll need to run a server like Tomcat.  Next, you'll want to go to your front-end code in an IDE such as Visual Studio Code and run ng serve -o at the terminal window.  This will invoke the Angular application to run.  Once the application is running you should be able to log in using the employee number and password that you inserted into the employee table above.  This will be the main way you will interact with the application.  
+    Once the database is set up, you will need to load the Java back-end into your IDE such as Eclipse.  
+    Then you'll need to run a server like Tomcat.  
+    Next, you'll want to go to your front-end code in an IDE such as Visual Studio Code and run ng serve -o at the terminal window.  
+    This will invoke the Angular application to run.  
+    Once the application is running you should be able to log in using the employee number and password that you inserted into the employee table above.  
+    This will be the main way you will interact with the application.  
